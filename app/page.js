@@ -41,8 +41,9 @@ export default function Home() {
 
     return (
 
-        <div className="min-w-screen  p-10 ">
-            <h1 className="text-5xl font-semibold text-center">Weather App</h1>
+        <div className="min-w-screen p-3  backg-image bg-cover bg-center min-h-screen justify-center flex flex-col "
+        >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl mt-5  font-semibold text-center">Weather App</h1>
 
 
             <SearchBar onSearch={handleSearch} loading={loading} />
@@ -56,7 +57,7 @@ export default function Home() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="text-center bg-gray-500"
+                            className="text-center text-5xl font-semibold mt-5"
                         >
                             <p>Loading...</p>
 

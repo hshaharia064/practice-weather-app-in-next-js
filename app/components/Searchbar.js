@@ -22,11 +22,11 @@ export default function SearchBar({onSearch, loading}){
             <input type="text"
             value={location}
             onChange={e => setLocation(e.target.value)}
-            className="bg-gray-500 rounded-xl outline-0 border w-80 mx-3 border-gray-500 px-2 py-2"
+            className="bg-gray-100 text-black rounded-full outline-0 border w-80 lg:w-[60rem] mx-3 border-gray-500 px-3 py-2"
             placeholder="Enter location"
             />
 
-             <button className="px-4 rounded-xl py-2 bg-cyan-600  disabled:bg-gray-700"
+             <button className="  rounded-full outline-0 shadow-2xl bg-sky-500 w-80 lg:w-[60rem] mt-3 lg:w-[60rem] mx-3  px-2 py-2"
              disabled={loading}>
                 {loading ? 'Searching...' : 'Search'}</button>
         </form>
